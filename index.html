@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* General body styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Form container */
+    form {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Label styling */
+    label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    /* Input and select styling */
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="name"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    /* Radio and checkbox styling */
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    /* Styling for radio button and checkbox labels */
+    span label {
+        font-weight: normal;
+    }
+
+    /* Submit button styling */
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+        form {
+            width: 90%;
+        }
+    }
+</style>
+
+<body>
+    <form action="dataForm">
+        <span>
+            <label for="1">email</label>
+            <input type="email" id="1" name="email"><br><br>
+        </span>
+        <span>
+            <label for="2">name</label>
+            <input type="name" id="2" name="name"><br><br>
+        </span>
+        <span>
+            <label for="3">tel</label>
+            <input type="tel" id="3" name="tel"><br><br>
+        </span>
+        <span>
+            <label for="4">text</label>
+            <input type="text" id="4" name="text"><br><br>
+        </span>
+        <span>
+            <label for="5">Male</label>
+            <input type="radio" id="5" name="gender">
+
+            <label for="6">female</label>
+            <input type="radio" id="6" name="gender">
+
+            <label for="7">custom</label>
+            <input type="radio" id="7" name="gender">
+        </span>
+        <span>
+            <label for="8"> select your country</label>
+            <select name="select" id="8">
+                <option value="India">India</option>
+                <option value="U.S.A">U.S.A</option>
+                <option value="U.K">U.K</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Russia">Russia</option>
+            </select><br><br>
+        </span>
+        <span>
+            <label for="9">personal</label>
+            <input type="checkbox" id="9" name="checkbox"><br><br>
+            <label for="10">Buisness</label>
+            <input type="checkbox" id="10" name="checkbox"><br><br>
+        </span>
+
+
+        <button type="submit" value="submit">submit</button>
+    </form>
+</body>
+
+</html>
